@@ -660,7 +660,10 @@
     border-radius: var(--radius-2xl);
   }
 
-  .hero,
+  .hero {
+    overflow: hidden;
+  }
+
   .section-wrapper,
   .pillars-section,
   .feature-highlight,
@@ -704,14 +707,14 @@
   }
 
   .section-wrapper {
-    padding: 8rem 1rem 3rem;
-    border-bottom-left-radius: var(--radius-2xl);
-    border-bottom-right-radius: var(--radius-2xl);
+    padding: 8rem 0 3rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .pillars-section,
   .events-section {
-    padding-inline: 1rem;
+    padding-inline: 1.25rem;
   }
 
   .pillars-section {
@@ -738,7 +741,7 @@
   }
 
   .feature-highlight {
-    padding: 3rem 1rem;
+    padding: 3rem 1.25rem;
   }
 
   .feature-highlight__title {
@@ -763,7 +766,7 @@
   }
 
   .feature-highlight__second {
-    margin: 0 1rem -2rem;
+    margin: 0 1.25rem -2rem;
   }
 }
 
@@ -784,7 +787,9 @@
 
 @media (max-width: 640px) {
   .mission-section {
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 0;
+    overflow: hidden;
+    border-radius: 0;
   }
 
   .mission-section__title {
@@ -795,10 +800,19 @@
     font-size: 0.98rem;
   }
 
+  .mission-section__content {
+    padding-inline: 1.25rem;
+  }
+
   .mission-section__media {
-    min-height: 17.5rem;
+    min-height: 0;
     height: auto;
-    border-radius: 1.25rem;
+    border-radius: 0;
+  }
+
+  .mission-section__image {
+    display: block;
+    height: auto;
   }
 }
 
@@ -878,8 +892,7 @@
   border-radius: 1.5rem;
   text-decoration: none;
   background: #fff;
-  box-shadow: 0 1.25rem 2.5rem rgba(10, 37, 64, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .instagram-section__card-header {
@@ -902,8 +915,7 @@
   color: var(--color-text);
 }
 
-.instagram-section__follow-btn,
-.instagram-section__view-profile-btn {
+.instagram-section__follow-btn {
   padding: 0.25rem 0.75rem;
   border: 1px solid var(--color-border-muted);
   border-radius: 0.5rem;
@@ -915,8 +927,7 @@
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.instagram-section__follow-btn:hover,
-.instagram-section__view-profile-btn:hover {
+.instagram-section__follow-btn:hover {
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
 }
@@ -932,7 +943,6 @@
 .instagram-section__card:hover,
 .instagram-section__card:focus-visible {
   transform: translateY(-0.35rem);
-  box-shadow: 0 1.5rem 2.8rem rgba(10, 37, 64, 0.14);
 }
 
 .instagram-section__card:hover .instagram-section__image,
@@ -954,29 +964,38 @@
   position: relative;
   min-width: 0;
   overflow: hidden;
+  aspect-ratio: 1080 / 1470;
   border-radius: 1.5rem;
   background: #fff;
-  border: 1px solid rgba(8, 38, 66, 0.08);
-  box-shadow: 0 1.25rem 2.5rem rgba(10, 37, 64, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 34rem;
-  max-height: 34rem;
+  border: 0;
+  box-shadow: 0 0.5rem 1.25rem rgba(10, 37, 64, 0.06);
+  transition: transform 0.3s ease;
+  min-height: 26rem;
+  max-height: none;
 }
 
 .instagram-section__embed:hover,
 .instagram-section__embed:focus-within {
   transform: translateY(-0.35rem);
-  box-shadow: 0 1.5rem 2.8rem rgba(10, 37, 64, 0.14);
+  box-shadow: 0 0.75rem 1.5rem rgba(10, 37, 64, 0.08);
 }
 
 .instagram-section__embed .instagram-media {
   width: 100% !important;
   min-width: 100% !important;
+  height: 100% !important;
   margin: 0 !important;
 }
 
 .instagram-section__embed iframe {
-  margin-bottom: -5.5rem !important;
+  width: 104% !important;
+  max-width: 104% !important;
+  height: calc(100% + 14.5rem) !important;
+  margin-left: -2% !important;
+  margin-top: -3.75rem !important;
+  margin-bottom: -13.5rem !important;
+  transform: scale(1.02);
+  transform-origin: top center;
 }
 
 .instagram-section__overlay {
@@ -999,7 +1018,7 @@
 
 @media (max-width: 768px) {
   .instagram-section {
-    padding: 4rem 1rem;
+    padding: 4rem 1.25rem;
   }
 
   .instagram-section__grid {
@@ -1007,7 +1026,7 @@
   }
 
   .instagram-section__embed {
-    min-height: 31rem;
-    max-height: 31rem;
+    min-height: 22rem;
+    max-height: none;
   }
 }

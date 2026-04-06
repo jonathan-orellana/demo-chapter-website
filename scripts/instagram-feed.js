@@ -1,7 +1,7 @@
 const INSTAGRAM_POST_URLS = [
   "https://www.instagram.com/p/DWmDXocEWIU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   "https://www.instagram.com/p/DWrM08XESTB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  "https://www.instagram.com/p/DWoplOOEWR0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  "https://www.instagram.com/p/DWw8gmgkgbC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
 ];
 
 async function loadInstagramPosts() {

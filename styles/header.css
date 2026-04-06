@@ -281,7 +281,7 @@
     bottom: 0;
     display: block;
     width: 100%;
-    background-color: rgba(23, 39, 52, 0.98);
+    background-color: var(--color-primary);
     border-top: var(--border-width-base) solid var(--color-border-light);
     opacity: 0;
     visibility: hidden;
@@ -321,7 +321,7 @@
     padding: 1rem 0.5rem;
     text-align: left;
     font-size: 1rem;
-    border-bottom: var(--border-width-base) solid rgba(255, 255, 255, 0.15);
+    border-bottom: 0;
   }
 
   .site-nav__link[aria-current="page"]::after {
@@ -338,6 +338,7 @@
     max-width: 100%;
     margin-top: 0;
     padding: 0;
+    background-color: var(--color-text-inverse);
     border: 0;
     border-radius: 0.75rem;
     opacity: 1;
@@ -359,6 +360,7 @@
 
   .dropdown-menu__link {
     padding: 0.9rem 1rem;
+    color: var(--color-text);
   }
 
   .site-nav__item--mobile-cta {
