@@ -36,7 +36,6 @@ body {
   background-color: var(--color-bg-panel);
   */
   border-radius: 1.25rem;
-  box-shadow: 0 1rem 2rem rgba(7, 18, 29, 0.18);
 }
 
 .history-section__title {
