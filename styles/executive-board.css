@@ -1,3 +1,7 @@
+body {
+  background-color: var(--color-surface-alt);
+}
+
 main {
   display: block;
 }
@@ -7,8 +11,8 @@ main {
   min-height: 22rem;
   padding: 12rem 1.5rem 0;
   overflow: hidden;
-  background-image: url("/assets/images/hero-bg.jpg");
-  background-position: center;
+  background-image: url("../assets/images/rotunda.jpg");
+  background-position: center 22%;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: var(--radius-3xl);
@@ -98,8 +102,13 @@ main {
   will-change: opacity, transform;
 }
 
-.exec-card:nth-child(odd) { transform: translateX(-2rem); }
-.exec-card:nth-child(even) { transform: translateX(2rem); }
+.exec-card:nth-child(odd) {
+  transform: translateX(-2rem);
+}
+
+.exec-card:nth-child(even) {
+  transform: translateX(2rem);
+}
 
 .exec-card__image {
   display: block;
@@ -157,7 +166,8 @@ main {
   .exec-hero {
     min-height: 18rem;
     padding: 8rem 1.25rem 2rem;
-    background-position: center;
+    background-position: center -5%;
+    background-size: 165%;
     border-bottom-left-radius: var(--radius-2xl);
     border-bottom-right-radius: var(--radius-2xl);
   }

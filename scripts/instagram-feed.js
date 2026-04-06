@@ -42,12 +42,14 @@ async function loadInstagramPosts() {
   feed.innerHTML = normalizedUrls
     .map((url, index) => `
       <div class="instagram-section__embed">
-        <blockquote
-          class="instagram-media"
-          data-instgrm-permalink="${url}"
-          data-instgrm-version="14"
-          style="background:#FFF; border:0; border-radius:0; margin:0; min-width:280px; padding:0; width:100%;"
-        ></blockquote>
+        <div class="instagram-section__embed-frame">
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="${url}"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:0; margin:0; min-width:280px; padding:0; width:100%;"
+          ></blockquote>
+        </div>
         <a
           class="instagram-section__overlay"
           href="${url}"

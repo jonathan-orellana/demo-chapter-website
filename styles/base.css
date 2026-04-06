@@ -27,7 +27,7 @@
   --color-bg-dark-alt: #0b1f30;
   --color-bg-panel: #0f2434;
   --color-bg-section: #172734;
-  --color-bg-section-alt: #1f3447;
+  --color-bg-section-alt: #1d3142;
   --color-bg-card: rgba(255, 255, 255, 0.05);
   --color-bg-card-alt: rgba(255, 255, 255, 0.03);
   --color-bg-timeline-card: rgba(255, 255, 255, 0.05);
@@ -206,18 +206,7 @@ main {
 }
 
 .skip-link {
-  position: absolute;
-  left: 1rem;
-  top: -4rem;
-  z-index: 2000;
-  padding: 0.75rem 1rem;
-  background-color: var(--color-text);
-  color: var(--color-text-inverse);
-  border-radius: var(--radius-sm);
-}
-
-.skip-link:focus {
-  top: 1rem;
+  display: none;
 }
 
 .section-shell {
