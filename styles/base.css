@@ -1,5 +1,6 @@
 :root {
-  --font-family-base: "Lato", sans-serif;
+  --font-family-base:  georgia, sans-serif, serif;
+  --font-family-heading: "Barlow Condensed", sans-serif;
 
   --color-primary: #64a9e3;
   --color-primary-strong: #4f9ee3;
@@ -158,6 +159,17 @@ body {
   color: var(--color-text);
   background-color: var(--color-surface);
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+.section-label,
+.btn,
+button,
+nav {
+  font-family: var(--font-family-heading);
 }
 
 body.menu-open {
