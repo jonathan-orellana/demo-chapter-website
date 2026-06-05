@@ -132,13 +132,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.75rem;
-  padding: 0.875rem 1.5rem;
+  min-height: var(--button-min-height);
+  padding: var(--button-padding-block) var(--button-padding-inline);
   border: var(--border-width-base) solid transparent;
-  border-radius: var(--radius-md);
-  font-size: 0.85rem;
-  font-weight: var(--font-weight-medium);
-  line-height: 1;
+  border-radius: var(--button-radius);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.1;
+  text-align: center;
   transition:
     background-color var(--transition-fast),
     color var(--transition-fast),

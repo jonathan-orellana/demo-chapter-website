@@ -59,7 +59,7 @@
   font-size: 0.95rem;
   line-height: 1.45;
   font-weight: var(--font-weight-regular);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .site-footer__socials {

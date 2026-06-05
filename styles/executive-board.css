@@ -42,12 +42,12 @@ main {
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
   font-weight: var(--font-weight-semibold);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .exec-hero__title {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: var(--font-size-h1);
   line-height: var(--line-height-tight);
   font-weight: var(--font-weight-semibold);
 }
@@ -55,7 +55,7 @@ main {
 .exec-hero__text {
   max-width: 40rem;
   margin: 1rem auto 0;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   line-height: var(--line-height-loose);
 }
 
@@ -76,7 +76,7 @@ main {
 
 .exec-board__header h2 {
   margin-bottom: 0.75rem;
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: var(--font-size-h2);
   line-height: var(--line-height-snug);
   color: var(--color-text-strong);
 }
@@ -126,7 +126,7 @@ main {
 }
 
 .exec-card__role {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
   line-height: 1.3;
   color: #68a9dc;
 }
@@ -179,7 +179,7 @@ main {
   }
 
   .exec-hero__title {
-    font-size: 1.85rem;
+    font-size: clamp(2.1rem, 11vw, 3rem);
     line-height: 1.15;
   }
 
@@ -198,7 +198,7 @@ main {
   }
 
   .exec-board__header h2 {
-    font-size: 1.7rem;
+    font-size: clamp(1.9rem, 9vw, 2.4rem);
   }
 
   .exec-board__header p {

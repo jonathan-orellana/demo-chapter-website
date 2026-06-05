@@ -1,6 +1,6 @@
 :root {
-  --font-family-base:  georgia, sans-serif, serif;
-  --font-family-heading: "Barlow Condensed", sans-serif;
+  --font-family-base:  "Lato", sans-serif, serif;
+  --font-family-heading: "Lato", sans-serif;
 
   --color-primary: #64a9e3;
   --color-primary-strong: #4f9ee3;
@@ -73,6 +73,12 @@
   --radius-3xl: 2.5rem;
   --radius-4xl: 3.125rem;
   --radius-pill: 999px;
+  --button-radius: 0.5rem;
+  --button-font-size: 0.95rem;
+  --button-font-weight: var(--font-weight-regular);
+  --button-min-height: 2.875rem;
+  --button-padding-block: 0.8rem;
+  --button-padding-inline: 1.4rem;
 
   --border-width-base: 1px;
   --border-width-strong: 2px;
@@ -85,8 +91,12 @@
   --font-size-xl: 1.5rem;
   --font-size-2xl: 1.75rem;
   --font-size-3xl: 2rem;
-  --font-size-4xl: clamp(2.5rem, 4vw, 3.375rem);
-  --font-size-5xl: clamp(4rem, 8vw, 6rem);
+  --font-size-4xl: clamp(2.35rem, 4.5vw, 3.6rem);
+  --font-size-5xl: clamp(3rem, 7vw, 5.25rem);
+  --font-size-h1: clamp(2.4rem, 5vw, 4rem);
+  --font-size-h2: clamp(2rem, 3.5vw, 3rem);
+  --font-size-h3: clamp(1.35rem, 2vw, 1.65rem);
+  --font-size-body: clamp(1rem, 1.1vw, 1.075rem);
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -165,11 +175,34 @@ h1,
 h2,
 h3,
 h4,
-.section-label,
 .btn,
 button,
 nav {
   font-family: var(--font-family-heading);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  line-height: 1.25;
 }
 
 body.menu-open {
@@ -232,20 +265,20 @@ main {
 
 .section-label {
   margin-bottom: var(--space-3);
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .section-title {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: var(--font-size-h2);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-snug);
 }
 
 .section-text {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   line-height: var(--line-height-loose);
 }
 

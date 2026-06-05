@@ -38,8 +38,8 @@ body {
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .philanthropy-intro {
@@ -55,17 +55,17 @@ body {
 .philanthropy-intro h1 {
   margin: 0 0 2rem;
   color: var(--ph-navy);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: var(--font-size-h1);
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .philanthropy-intro p:not(.philanthropy-label),
 .philanthropy-impact__content p:not(.philanthropy-label) {
   color: var(--ph-text-dark);
-  font-size: 0.9375rem;
+  font-size: var(--font-size-body);
   font-weight: 300;
   line-height: 1.75;
 }
@@ -113,11 +113,11 @@ body {
 .philanthropy-impact__content h2 {
   margin: 0 0 1.25rem;
   color: var(--ph-navy);
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-size: var(--font-size-h2);
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  line-height: 1.15;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .philanthropy-impact__content p:not(.philanthropy-label) {

@@ -99,27 +99,29 @@
 }
 
 .hero__eyebrow {
-  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   font-weight: var(--font-weight-semibold);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .hero__sub-eyebrow {
   margin-bottom: 1rem;
-  font-size: var(--font-size-xl);
+  font-size: 0.95rem;
   font-weight: var(--font-weight-regular);
+  line-height: 1.4;
 }
 
 .hero__title {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-h1);
   line-height: var(--line-height-tight);
   font-weight: var(--font-weight-regular);
 }
 
 .hero__subtitle {
-  font-size: var(--font-size-5xl);
+  font-size: clamp(3rem, 7vw, 5rem);
   line-height: 1;
   font-weight: var(--font-weight-regular);
 }
@@ -235,11 +237,11 @@
 .mission-section__title {
   margin: 0 0 2rem;
   color: var(--color-primary);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  line-height: 1.2;
+  font-size: var(--font-size-h2);
+  line-height: 1.15;
   font-weight: var(--font-weight-bold);
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .mission-section__label {
@@ -247,14 +249,14 @@
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .mission-section__text {
   max-width: 52rem;
   color: #f8fafc;
-  font-size: 0.9375rem;
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-light);
   line-height: 1.75;
 }
@@ -264,14 +266,16 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  min-height: 3rem;
+  min-height: var(--button-min-height);
   margin-top: 2rem;
-  padding: 0.9rem 1.75rem;
-  border-radius: 0.9rem;
+  padding: var(--button-padding-block) var(--button-padding-inline);
+  border-radius: var(--button-radius);
   background-color: var(--color-primary-strong);
   color: var(--color-text-inverse);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.1;
+  text-align: center;
   transition: background-color 0.2s ease, opacity var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -321,24 +325,24 @@
   color: var(--color-primary);
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .join-preview__title {
   margin: 0 0 1.25rem;
   color: var(--color-primary-strong);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  line-height: 1.2;
+  font-size: var(--font-size-h2);
+  line-height: 1.15;
   font-weight: var(--font-weight-bold);
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .join-preview__text {
   margin: 0 0 2rem;
   color: var(--color-text);
-  font-size: 0.9375rem;
+  font-size: var(--font-size-body);
   line-height: 1.75;
 }
 
@@ -346,13 +350,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3rem;
-  padding: 0.9rem 1.75rem;
-  border-radius: 0;
+  min-height: var(--button-min-height);
+  padding: var(--button-padding-block) var(--button-padding-inline);
+  border-radius: var(--button-radius);
   background-color: var(--color-primary-strong);
   color: var(--color-text-inverse);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.1;
+  text-align: center;
   transition: background-color 0.2s ease, opacity var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -386,7 +392,7 @@
 
 .pillars-section__title {
   margin-bottom: 3rem;
-  font-size: 2.5rem;
+  font-size: var(--font-size-h2);
   color: var(--color-primary-strong);
 }
 
@@ -482,12 +488,12 @@
 
 .pillar-card__title {
   margin-bottom: 0.75rem;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-h3);
   color: var(--color-primary);
 }
 
 .pillar-card__text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: var(--line-height-base);
 }
 
@@ -503,13 +509,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3rem;
-  padding: 0.9rem 1.75rem;
-  border-radius: 0.9rem;
+  min-height: var(--button-min-height);
+  padding: var(--button-padding-block) var(--button-padding-inline);
+  border-radius: var(--button-radius);
   background-color: var(--color-primary-strong);
   color: var(--color-text-inverse);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.1;
+  text-align: center;
   transition: background-color 0.2s ease, opacity var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -558,7 +566,7 @@
 
 .feature-highlight__title {
   margin-bottom: 2rem;
-  font-size: 1.6rem;
+  font-size: var(--font-size-h2);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-snug);
   color: var(--color-primary);
@@ -568,7 +576,7 @@
   max-width: 60ch;
   margin-bottom: 2rem;
   color: #f8fafc;
-  font-size: 0.95rem;
+  font-size: var(--font-size-body);
   line-height: var(--line-height-relaxed);
 }
 
@@ -660,8 +668,8 @@
 .event-card__month {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
-  letter-spacing: var(--tracking-wider);
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .event-card__content {
@@ -854,11 +862,11 @@
   }
 
   .hero__title {
-    font-size: 2rem;
+    font-size: clamp(2.25rem, 11vw, 3rem);
   }
 
   .hero__subtitle {
-    font-size: 3rem;
+    font-size: clamp(2.75rem, 14vw, 4rem);
   }
 
   .hero__actions {
@@ -904,7 +912,7 @@
   }
 
   .pillars-section__title {
-    font-size: 2rem;
+    font-size: clamp(2rem, 10vw, 2.5rem);
   }
 
   .pillar-card {
@@ -927,7 +935,7 @@
   }
 
   .feature-highlight__title {
-    font-size: 1.4rem;
+    font-size: clamp(1.9rem, 9vw, 2.35rem);
   }
 
   .feature-highlight__text {
@@ -980,11 +988,11 @@
   }
 
   .mission-section__title {
-    font-size: clamp(1.8rem, 8vw, 2.3rem);
+    font-size: clamp(1.9rem, 9vw, 2.5rem);
   }
 
   .mission-section__text {
-    font-size: 0.9375rem;
+    font-size: 1rem;
   }
 
   .mission-section__content {
@@ -1049,15 +1057,15 @@
 .instagram-section__eyebrow {
   margin: 0 0 0.5rem;
   font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--color-primary);
   font-weight: var(--font-weight-semibold);
 }
 
 .instagram-section__title {
   margin: 0 0 0.75rem;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-h2);
   color: var(--color-primary-strong);
 }
 

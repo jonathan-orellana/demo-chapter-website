@@ -11,9 +11,9 @@
   --ch-line: rgba(13, 30, 48, 0.12);
   --ch-line-soft: rgba(13, 30, 48, 0.07);
   --ch-size-label: 11px;
-  --ch-size-body: 0.9375rem;
-  --ch-size-title: clamp(1.6rem, 3vw, 2.6rem);
-  --ch-size-section-title: clamp(1.8rem, 3vw, 2.4rem);
+  --ch-size-body: var(--font-size-body);
+  --ch-size-title: var(--font-size-h1);
+  --ch-size-section-title: var(--font-size-h2);
   --ch-size-founder: 1rem;
 }
 
@@ -48,8 +48,8 @@ body {
   font-family: var(--font-family-heading);
   font-size: var(--ch-size-label);
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .chapter-eyebrow::before {
@@ -79,7 +79,7 @@ body {
   font-size: var(--ch-size-title);
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .chapter-hero__lead {
@@ -108,17 +108,19 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.75rem;
-  padding: 0.8rem 1.4rem;
+  min-height: var(--button-min-height);
+  padding: var(--button-padding-block) var(--button-padding-inline);
   border: 1px solid var(--color-primary);
-  border-radius: var(--radius-md);
+  border-radius: var(--button-radius);
   background: var(--color-primary);
   color: #fff;
   font-family: var(--font-family-heading);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: none;
   transition:
     background-color var(--transition-fast),
     border-color var(--transition-fast),
@@ -185,7 +187,7 @@ body {
   font-size: var(--ch-size-section-title);
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .chapter-founders__head > p {

@@ -72,17 +72,17 @@ body {
 .hero__eyebrow {
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--oh-blue-light);
   margin-bottom: 1.25rem;
 }
 
 .hero__title {
-  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  font-size: var(--font-size-h1);
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.08;
+  letter-spacing: 0;
   color: #fff;
   margin-bottom: 1.25rem;
 }
@@ -93,7 +93,7 @@ body {
 }
 
 .hero__subtitle {
-  font-size: 0.9375rem;
+  font-size: var(--font-size-body);
   font-weight: 300;
   color: rgba(255, 255, 255, 0.65);
   max-width: 400px;
@@ -106,10 +106,10 @@ body {
    =================================================== */
 
 .section-label {
-  font-size: 11px;
+  font-size: var(--font-size-sm);
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--color-primary);
   display: flex;
   align-items: center;
@@ -147,11 +147,11 @@ body {
 
 .timeline-section__heading {
 
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-size: var(--font-size-h2);
   font-weight: 700;
   color: var(--oh-navy);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: 0;
 }
 
 /* Center vertical line */
@@ -253,24 +253,24 @@ body {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--color-primary);
   margin-bottom: 0.75rem;
 }
 
 .timeline-item__title {
 
-  font-size: 1.15rem;
+  font-size: var(--font-size-h3);
   font-weight: 700;
   color: var(--oh-navy);
   margin-bottom: 0.75rem;
-  line-height: 1.35;
-  letter-spacing: -0.01em;
+  line-height: 1.25;
+  letter-spacing: 0;
 }
 
 .timeline-item__text {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--oh-text-mid);
   line-height: 1.75;
   font-weight: 300;
@@ -319,11 +319,13 @@ body {
 .timeline-btn.btn--primary {
   background-color: var(--color-primary-strong);
   color: var(--color-text-inverse);
-  min-height: 3rem;
-  padding: 0.9rem 1.75rem;
-  border-radius: 0.9rem;
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
+  min-height: var(--button-min-height);
+  padding: var(--button-padding-block) var(--button-padding-inline);
+  border-radius: var(--button-radius);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.1;
+  text-align: center;
 }
 
 .timeline-btn.btn--primary:hover,
@@ -365,11 +367,11 @@ body {
 
 .founders-section__title {
 
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: var(--font-size-h2);
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .founders-section__intro {
